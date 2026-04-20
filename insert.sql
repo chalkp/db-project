@@ -13,11 +13,11 @@ VALUES
 
 INSERT INTO Users (Score, FName, LName, Dept_ID) 
 VALUES 
-    (100, 'Saranyapong', 'Wongrintramaytee', 1),
-    (100, 'Sorrawit', 'Poomseetong', 2),
-    (100, 'Pralod', 'Charoenvanitchakorn', 1),
-    (100, 'Phrompiriya', 'Minbumrung', 1),
-    (100, 'Professor', 'Redacted', 1);
+    (100, 'Sorrawit', 'Poomseetong', 1),
+    (100, 'Saranyapong', 'Wongrintramaytee', 3),
+    (100, 'Pralod', 'Charoenvanitchakorn', 3),
+    (100, 'Phrompiriya', 'Minbumrung', 3),
+    (100, 'Professor', 'Redacted', 4);
 
 INSERT INTO Image (Image_Path) 
 VALUES 
