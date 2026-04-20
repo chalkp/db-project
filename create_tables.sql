@@ -60,7 +60,7 @@ CREATE TABLE Equipment (
     Owner_ID INT NOT NULL,
     Cover_Image INT NOT NULL,
     FOREIGN KEY (Type_ID) REFERENCES Equipment_Type(Type_ID),
-    FOREIGN KEY (Owner_ID) REFERENCES "User"(User_ID),
+    FOREIGN KEY (Owner_ID) REFERENCES Users(User_ID),
     FOREIGN KEY (Cover_Image) REFERENCES Image(Image_ID)
 );
 
@@ -95,5 +95,5 @@ CREATE TABLE Review (
     Review_ID SERIAL NOT NULL PRIMARY KEY,
     T_ID INT NOT NULL,
     Stars SMALLINT NOT NULL,
-    FOREIGN KEY (T_ID) REFERENCES Transaction(T_ID) ON DELETE CASCADE
+    FOREIGN KEY (T_ID) REFERENCES Transactions(T_ID) ON DELETE CASCADE
 );

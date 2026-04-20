@@ -8,7 +8,7 @@ VALUES
     (1, 'Robotics and Artificial Intelligence'),
     (1, 'Computer Engineering');
 
-INSERT INTO "User" (Score, FName, LName, Dept_ID) 
+INSERT INTO Users (Score, FName, LName, Dept_ID) 
 VALUES 
     (100, 'Saranyapong', 'Wongrintramaytee', 1),
     (100, 'Sorrawit', 'Poomseetong', 2),
@@ -57,7 +57,7 @@ VALUES
     (2, 1, '<Dummy Object ID>', 5, 2),
     (3, 1, '<Dummy Object ID>', 5, 3);
 
-INSERT INTO "Transaction" (Status, Request_Time, Approve_Time, Pickup_Time, Return_Time, Due_Time, Requester_ID, Lending, Pickup_Image, Return_Image)
+INSERT INTO Transactions (Status, Request_Time, Approve_Time, Pickup_Time, Return_Time, Due_Time, Requester_ID, Lending, Pickup_Image, Return_Image)
 VALUES
     ('Returned', '2026-04-10 09:00:00', '2026-04-10 10:30:00', '2026-04-11 14:00:00', '2026-04-16 11:00:00', '2026-04-15 17:00:00', 1, 1, 4, 5),
     ('Approved', '2026-04-19 15:30:00', '2026-04-20 09:15:00', NULL, NULL, '2026-04-25 17:00:00', 2, 2, NULL, NULL);
