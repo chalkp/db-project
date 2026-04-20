@@ -6,7 +6,10 @@ VALUES
 INSERT INTO Department (Faculty_ID, Dept_Name) 
 VALUES 
     (1, 'Robotics and Artificial Intelligence'),
+    (1, 'Electrical Engineering'),
     (1, 'Computer Engineering');
+    (2, 'Physics'),
+    (1, 'Chemistry'),
 
 INSERT INTO Users (Score, FName, LName, Dept_ID) 
 VALUES 
