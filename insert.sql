@@ -7,19 +7,19 @@ INSERT INTO Department (Faculty_ID, Dept_Name)
 VALUES 
     (1, 'Robotics and Artificial Intelligence'),
     (1, 'Electrical Engineering'),
-    (1, 'Computer Engineering');
+    (1, 'Computer Engineering'),
     (2, 'Physics'),
-    (2, 'Chemistry'),
+    (2, 'Chemistry');
 
 INSERT INTO Users (Score, FName, LName, Dept_ID) 
 VALUES 
-    (100, 'Professor', 'Ronnapee', 1);
-    (100, 'Suttikarn', 'Panla', 2);
-    (100, 'Tee', 'Hemjinda', 3);
+    (100, 'Professor', 'Ronnapee', 1),
+    (100, 'Suttikarn', 'Panla', 2),
+    (100, 'Tee', 'Hemjinda', 3),
     (100, 'Sorrawit', 'Poomseetong', 3),
     (100, 'Saranyapong', 'Wongrintramaytee', 3),
     (100, 'Pralod', 'Charoenvanitchakorn', 3),
-    (100, 'Phrompiriya', 'Minbumrung', 3),
+    (100, 'Phrompiriya', 'Minbumrung', 3);
 
 INSERT INTO Image (Image_Path)
 VALUES
