@@ -76,7 +76,7 @@ CREATE TABLE Transactions (
     Lending INT NOT NULL,
     Pickup_Image INT,
     Return_Image INT,
-    FOREIGN KEY (Requester_ID) REFERENCES "User"(User_ID),
+    FOREIGN KEY (Requester_ID) REFERENCES Users(User_ID),
     FOREIGN KEY (Lending) REFERENCES Equipment(Equipment_ID),
     FOREIGN KEY (Pickup_Image) REFERENCES Image(Image_ID) ON DELETE SET NULL,
     FOREIGN KEY (Return_Image) REFERENCES Image(Image_ID) ON DELETE SET NULL
@@ -88,12 +88,12 @@ CREATE TABLE Penalty (
     Fine DECIMAL(10, 2),
     Score_deduction INT,
     Reason TEXT,
-    FOREIGN KEY (T_ID) REFERENCES "Transaction"(T_ID) ON DELETE CASCADE
+    FOREIGN KEY (T_ID) REFERENCES Transactions(T_ID) ON DELETE CASCADE
 );
 
 CREATE TABLE Review (
     Review_ID SERIAL NOT NULL PRIMARY KEY,
     T_ID INT NOT NULL,
     Stars SMALLINT NOT NULL,
-    FOREIGN KEY (T_ID) REFERENCES "Transaction"(T_ID) ON DELETE CASCADE
+    FOREIGN KEY (T_ID) REFERENCES Transaction(T_ID) ON DELETE CASCADE
 );
