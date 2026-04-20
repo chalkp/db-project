@@ -1,0 +1,43 @@
+{
+  "title": "users",
+  "required": ["_id", "fname", "lname", "dept_details"],
+  "properties": {
+    "_id": { "bsonType": "objectId" },
+    "fname": { "bsonType": "string" },
+    "lname": { "bsonType": "string" },
+    "score": { "bsonType": "int" },
+    "dept_details": {
+      "bsonType": "object",
+      "properties": {
+        "dept_name": { "bsonType": "string" },
+        "faculty_name": { "bsonType": "string" }
+      }
+    },
+    "user_transactions": {
+      "bsonType": "array",
+      "description": "รายการธุรกรรมที่ผู้ใช้ทำ (Multi-values)",
+      "items": {
+        "bsonType": "object",
+        "properties": {
+          "t_id": { "bsonType": "int" },
+          "status": { "bsonType": "string" },
+          "lending_equipment": { "bsonType": "string" },
+          "request_time": { "bsonType": "date" },
+          "due_time": { "bsonType": "date" },
+          "penalty_details": {
+            "bsonType": "array",
+            "description": "ค่าปรับที่เกิดขึ้นในแต่ละรายการ (Multi-values ภายใน Nested Object)",
+            "items": {
+              "bsonType": "object",
+              "properties": {
+                "fine": { "bsonType": "decimal" },
+                "score_deduction": { "bsonType": "int" },
+                "reason": { "bsonType": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
